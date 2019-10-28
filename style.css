@@ -182,90 +182,20 @@ h2 {
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 	-webkit-animation-name: fadeOut;
-	animation-name: fadeOut;
+  animation-name: fadeOut;
+  
 }
-#card1.correct {
-	background: green;
-	-webkit-animation-duration:2s;
-	animation-duration: 2s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-	-webkit-animation-name: fadeOut;
-	animation-name: fadeOut;
-}
-#card2.correct {
-	background: green;
-	-webkit-animation-duration:2s;
-	animation-duration: 2s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-	-webkit-animation-name: fadeOut;
-	animation-name: fadeOut;
-}
-#card3.correct {
-	-webkit-animation-duration:2s;
-	animation-duration: 2s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-	-webkit-animation-name: fadeOut;
-	animation-name: fadeOut;
-}
-#card4.correct {
-	-webkit-animation-duration:2s;
-	animation-duration: 2s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-	-webkit-animation-name: fadeOut;
-	animation-name: fadeOut;
-}
-#card5.correct {
-	-webkit-animation-duration:2s;
-	animation-duration: 2s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-	-webkit-animation-name: fadeOut;
-	animation-name: fadeOut;
-}
-#card6.correct {
-	-webkit-animation-duration:2s;
-	animation-duration: 2s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-	-webkit-animation-name: fadeOut;
-	animation-name: fadeOut;
-}
+#card1.correct, 
+#card2.correct, 
+#card3.correct, 
+#card4.correct, 
+#card5.correct, 
+#card6.correct, 
 #card7.correct {
-	-webkit-animation-duration:2s;
-	animation-duration: 2s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-	-webkit-animation-name: fadeOut;
-	animation-name: fadeOut;
+	background: green;
+  display: none;
 }
-#card8.correct {
-	-webkit-animation-duration:2s;
-	animation-duration: 2s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-	-webkit-animation-name: fadeOut;
-	animation-name: fadeOut;
-}
-#card9.correct {
-	-webkit-animation-duration:2s;
-	animation-duration: 2s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-	-webkit-animation-name: fadeOut;
-	animation-name: fadeOut;
-}
-#card10.correct {
-	-webkit-animation-duration:2s;
-	animation-duration: 2s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-	-webkit-animation-name: fadeOut;
-	animation-name: fadeOut;
-}
+
 /* Success message */
 #successMessage {
 	position: absolute;
