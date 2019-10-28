@@ -1,0 +1,311 @@
+body {
+	margin: 30px;
+	font-family: Sans-serif;
+	line-height: 1.8em;
+	color: #333;
+}
+h1, h2, h3, h4 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+h2 {
+	text-align: center;
+	margin: 10px;
+}
+/* Main content area */
+#content {
+	margin: 10px 50px;
+	text-align: center;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/* Header/footer boxes */
+.wideBox {
+	clear: both;
+	text-align: center;
+	margin: 70px;
+	padding: 10px;
+	background: #ebedf2;
+	border: 1px solid #333;
+}
+.wideBox h1 {
+	font-weight: bold;
+	margin: 20px;
+	color: #666;
+	font-size: 1.5em;
+}
+/* Slots for final image positions */
+#cardSlots {
+	margin: 0 auto 3em auto;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+/* The initial pile of unsorted images */
+#cardPile {
+	margin: 0 auto;
+	display: flex;
+}
+#cardSlots, #cardPile {
+	width: 100%;
+	height: 50%;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	border-radius: 10px;
+}
+/* Individual images and placeholder */
+#cardSlots div {
+	padding-bottom: 0;
+	border-radius: 10px;
+	background: #fff;
+}
+#cardSlots div.hovered {
+	background: #aaa;
+}
+#cardSlots div {
+	grid-row-start: 1;
+	grid-column-start: 1;
+}
+#cardSlots .dropBox {
+	display: flex;
+	background: #6994ab;
+}
+#cardSlots .dropBox ul{
+	text-align: left;
+}
+#cardSlots .dropBox ul li{
+	line-height: 1.5em;
+}
+#cardSlots .dropBox ul:first-child {
+	margin-right: 10px;
+}
+#cardSlots .dropBox ul:last-child {
+	border-left: 1px #004e73 solid;
+	margin-right: 10px;
+}
+#cardSlots .dropBox {
+	font-size: 12px;
+}
+#cardSlots .dropBox span.contentContainer {
+	display: flex;
+	width: 100%;
+	margin: 20px;
+	background-color: #d1dbe3;
+	border-radius: 3px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+#cardSlots .dropBox img {
+	margin: 10px
+}
+#cardSlots .placeholder {
+	border: #004e73 1px solid;
+	border-top: none;
+	width: 204px;
+	Height: 265px;
+	margin: 20px;
+}
+#cardSlots .placeholder span {
+	color: white;
+}
+#cardSlots .placeholderTitle {
+	background-color: #004e73;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	padding: 10px;
+}
+#cardPile div.ui-draggable-dragging {
+	box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+.cardImage {
+	background: #fff;
+	border: #004e73 3px solid;
+	border-radius: 9px;
+	color: #fff;
+	font-size: 1em;
+	margin: 5px;
+	position: relative;
+	text-shadow: 0 0 3px #000;
+	text-align: center;
+	width: 205px;
+	Height: 240px;
+}
+.cardImage img {
+	max-height: 100%;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	display: block;
+	position: absolute;
+	top: 40px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	box-sizing: border-box;
+	margin: auto;
+}
+.roleBox {
+	background-color: #004e73;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	padding: 10px;
+	font-size: 12px;
+	line-height: 1.5em;
+	font-weight: bold;
+	min-height: 35px;
+}
+@-webkit-keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+/* Individually images */
+.ui-droppable-disabled {
+	-webkit-animation-duration:2s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
+#card1.correct {
+	background: green;
+	-webkit-animation-duration:2s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
+#card2.correct {
+	background: green;
+	-webkit-animation-duration:2s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
+#card3.correct {
+	-webkit-animation-duration:2s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
+#card4.correct {
+	-webkit-animation-duration:2s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
+#card5.correct {
+	-webkit-animation-duration:2s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
+#card6.correct {
+	-webkit-animation-duration:2s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
+#card7.correct {
+	-webkit-animation-duration:2s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
+#card8.correct {
+	-webkit-animation-duration:2s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
+#card9.correct {
+	-webkit-animation-duration:2s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
+#card10.correct {
+	-webkit-animation-duration:2s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
+/* Success message */
+#successMessage {
+	position: absolute;
+	left: 580px;
+	top: 250px;
+	width: 0;
+	height: 0;
+	z-index: 100;
+	background: #d1dbe3;
+	border: 2px solid #004e73;
+	border-radius: 10px;
+	box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+	padding: 20px;
+}
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+	#cardSlots .dropBox {
+		display: block;
+	}
+	#cardSlots .placeholder, #cardSlots .dropBox span.contentContainer {
+		width: auto;
+	}
+	.cardImage {
+		width: 180px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.cardImage {
+		width: 100%;
+	}
+	#cardSlots .dropBox span.contentContainer {
+		display: block;
+	}
+	#cardSlots .dropBox ul:last-child {
+		border-top: 1px #004e73 solid;
+		border-left: none;
+		margin-right: 10px;
+	}
+	#cardSlots .dropBox ul {
+		margin: 1em;
+		padding: 1em;
+	}
+}
