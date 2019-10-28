@@ -258,8 +258,10 @@ function handleCardDrop(event, ui) {
   if (correctCards == 7) {
     $("#successMessage").show();
     $("#successMessage").animate({
-      left: "20%",
-      top: "90px",
+      left: "0",
+      right: "0",
+      top: "0",
+      bottom: "0",
       width: "250px",
       height: "100px",
       opacity: 1
